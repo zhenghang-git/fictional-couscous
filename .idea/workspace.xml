@@ -1,7 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="996b6eee-eec5-4c89-ba56-d995ebbd9057" name="Default Changelist" comment="" />
+    <list default="true" id="996b6eee-eec5-4c89-ba56-d995ebbd9057" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyPoi.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mr/zh/Controller/DemoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mr/zh/EasyBuyStart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mr/zh/com/mr/zh/commom/controller/RediRectController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mr/zh/entity/DemoEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mr/zh/mapper/DemoEntityMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mr/zh/service/DemoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mr/zh/service/impl/DemoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mr/zh/utils/ExcelUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/DemoEntityMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/scripts/demo/demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/scripts/jquery-1.11.3.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/scripts/jquery.cookie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/scripts/mr-public.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/mr/zh/Controller/DemoController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/mr/zh/EasyBuyStart.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/mr/zh/com/mr/zh/commom/controller/RediRectController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/mr/zh/entity/DemoEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/mr/zh/mapper/DemoEntityMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/mr/zh/service/DemoService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/mr/zh/service/impl/DemoServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/mr/zh/utils/ExcelUtils$ExcelTypeEnum.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/mr/zh/utils/ExcelUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/DemoEntityMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/scripts/demo/demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/scripts/jquery-1.11.3.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/scripts/jquery.cookie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/scripts/mr-public.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/demo.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +79,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="JsFlowSettings">
@@ -65,6 +106,7 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1VuiHFFPay9Cu27GNFH8yctpxii" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RequestMappingsPanelOrder0" value="0" />
@@ -158,11 +200,22 @@
       <workItem from="1578306755229" duration="7907000" />
       <workItem from="1578356211671" duration="3591000" />
       <workItem from="1578375286909" duration="14351000" />
-      <workItem from="1578448101647" duration="2194000" />
+      <workItem from="1578448101647" duration="2791000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
