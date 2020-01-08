@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.mr.zh.mapper.DemoEntityMapper" >
+  <resultMap id="BaseResultMap" type="com.mr.zh.entity.DemoEntity" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="sex" property="sex" jdbcType="INTEGER" />
+    <result column="phoneNumber" property="phonenumber" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, name, sex, phoneNumber
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from t_demo
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from t_demo
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.mr.zh.entity.DemoEntity" >
+    insert into t_demo (id, name, sex, 
+      phoneNumber)
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{sex,jdbcType=INTEGER}, 
+      #{phonenumber,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.mr.zh.entity.DemoEntity" >
+    insert into t_demo
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="name != null" >
+        name,
+      </if>
+      <if test="sex != null" >
+        sex,
+      </if>
+      <if test="phonenumber != null" >
+        phoneNumber,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="name != null" >
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="sex != null" >
+        #{sex,jdbcType=INTEGER},
+      </if>
+      <if test="phonenumber != null" >
+        #{phonenumber,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.mr.zh.entity.DemoEntity" >
+    update t_demo
+    <set >
+      <if test="name != null" >
+        name = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="sex != null" >
+        sex = #{sex,jdbcType=INTEGER},
+      </if>
+      <if test="phonenumber != null" >
+        phoneNumber = #{phonenumber,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.mr.zh.entity.DemoEntity" >
+    update t_demo
+    set name = #{name,jdbcType=VARCHAR},
+      sex = #{sex,jdbcType=INTEGER},
+      phoneNumber = #{phonenumber,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+
+  <select id="getDemoList" resultType="com.mr.zh.entity.DemoEntity" >
+    select
+    *
+    from t_demo
+  </select>
+
+  <insert id="demoSave" parameterType="java.util.List" >
+    insert into t_demo (id, name, sex,
+    phoneNumber
+    )
+    values
+    <foreach collection="list" item="item" separator="," index="index">
+      (#{item.id,jdbcType=INTEGER}, #{item.name,jdbcType=VARCHAR}, #{item.sex,jdbcType=INTEGER},
+      #{item.phonenumber,jdbcType=VARCHAR}
+      )
+    </foreach>
+
+  </insert>
+</mapper>
